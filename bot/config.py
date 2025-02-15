@@ -6,9 +6,9 @@ if Path("config.env").exists():
     load_dotenv("config.env")
 
 class Telegram:
-    API_ID = int(getenv("API_ID", "0"))
-    API_HASH = getenv("API_HASH", "29171167")
-    BOT_TOKEN = getenv("BOT_TOKEN", "7ea2149629e445936619f06a3c0dc716")
+    API_ID = int(getenv("API_ID", "29171167"))
+    API_HASH = getenv("API_HASH", "7ea2149629e445936619f06a3c0dc716")
+    BOT_TOKEN = getenv("BOT_TOKEN", "")
     PORT = int(getenv("PORT", 8080))
     SESSION_STRING = getenv("SESSION_STRING", "")
     BASE_URL = getenv("BASE_URL", "https://github.com/ak4422920/Surf-TG").rstrip('/')
